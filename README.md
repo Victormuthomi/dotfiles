@@ -36,5 +36,16 @@ source ~/.zshrc && \
 tmux source ~/.tmux.conf
 
 
+```
+
+## Keeping Your Dotfiles Updated
+
+Whenever you make changes to your configuration files (Alacritty, Starship, Tmux, Neovim, Zsh), you can **sync them to GitHub** so your backup stays current.
+
+```bash
+cd ~/dotfiles
+git add .
+git commit -m "Update configs"
+git push
 
 ```
