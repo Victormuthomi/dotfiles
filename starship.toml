@@ -1,0 +1,41 @@
+add_newline = true
+
+format = """
+$hostname $directory$git_branch$git_status$cmd_duration
+$character
+"""
+
+# HOSTNAME (PC name)
+[hostname]
+ssh_only = false
+format = "[$hostname](bold green) "
+disabled = false
+
+# DIRECTORY
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncate_to_repo = true
+
+# GIT BRANCH
+[git_branch]
+symbol = " "
+style = "bold yellow"
+
+# GIT STATUS
+[git_status]
+style = "bold red"
+
+# COMMAND DURATION (only shows if command > 0.5s)
+[cmd_duration]
+min_time = 500
+format = " ⏱ [$duration](dimmed yellow)"
+
+# PROMPT SYMBOL
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[time]
+disabled = false
+format = "[$time](bold green) "

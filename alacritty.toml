@@ -1,0 +1,91 @@
+# -------------------
+# Alacritty Config — Gotham + Fira Nerd Font + Topbar + Dark Borders
+# -------------------
+
+# -------------------
+# Window settings
+# -------------------
+[window]
+dynamic_title = true
+startup_mode = "Fullscreen"
+opacity = 0.95
+
+
+# decorations left as default/full to keep titlebar and buttons
+decorations = "None"
+[window.padding]
+x = 12
+y = 12
+
+# -------------------
+# Font settings
+# -------------------
+[font]
+size = 12.0
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[font.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+
+# -------------------
+# Scrolling
+# -------------------
+[scrolling]
+history = 10000
+multiplier = 3
+
+# -------------------
+# Cursor
+# -------------------
+[cursor]
+style = "Block"
+
+# -------------------
+# Colors — Gotham Theme
+# -------------------
+[colors.primary]
+background = "#0b0c10"
+foreground = "#c5c8c6"
+
+[colors.normal]
+black   = "#1d1f21"
+red     = "#cc6666"
+green   = "#b5bd68"
+yellow  = "#f0c674"
+blue    = "#81a2be"
+magenta = "#b294bb"
+cyan    = "#8abeb7"
+white   = "#c5c8c6"
+
+[colors.bright]
+black   = "#666666"
+red     = "#d54e53"
+green   = "#b9ca4a"
+yellow  = "#e7c547"
+blue    = "#7aa6da"
+magenta = "#c397d8"
+cyan    = "#70c0b1"
+white   = "#eaeaea"
+
+[colors.cursor]
+cursor = "#c5c8c6"
+text   = "#0b0c10"
+
+[terminal]
+
+# -------------------
+# Performance tweaks
+# -------------------
+
+
+[terminal.shell]
+program = "/usr/bin/tmux"
+args = ["new-session", "-A", "-s", "main"]
